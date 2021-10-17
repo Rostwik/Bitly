@@ -11,7 +11,8 @@ def main():
         '-l',
         '--link',
         help='Ссылка',
-        type=str
+        type=str,
+        required=True
     )
     args = parser.parse_args()
 

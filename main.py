@@ -24,8 +24,8 @@ def main():
         response = requests.get(user_url)
         response.raise_for_status()
 
-    except Exception as ex:
-        print(f'К сожалению, адрес {user_url} некорректен!', ex)
+    except requests.exceptions.HTTPError:
+        print(f'К сожалению, адрес {user_url} некорректен!')
         return
 
     if not is_bitlink(user_url, bitly_token):

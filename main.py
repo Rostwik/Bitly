@@ -10,7 +10,7 @@ def main():
     parser.add_argument(
         '-l',
         '--link',
-        help='Ссылка',
+        help='The script works with Bitly links, the "-l" parameter is a link, it is required',
         type=str,
         required=True
     )

@@ -9,11 +9,9 @@ from dotenv import load_dotenv
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        '-l',
-        '--link',
+        'link',
         help='The script works with Bitly links, the "-l" parameter is a link, it is required',
         type=str,
-        required=True
     )
     args = parser.parse_args()
 

@@ -7,10 +7,10 @@ from dotenv import load_dotenv
 
 
 def main():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description='The script works with Bitly links.')
     parser.add_argument(
         'link',
-        help='The script works with Bitly links, the "-l" parameter is a link, it is required',
+        help='"link" parameter is a your link, it is required.',
         type=str,
     )
     args = parser.parse_args()
